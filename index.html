@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/logo_color_blanco_perla.png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand m-lg-4" href="#"></a>
+            <div class="container-fluid">
+                <img class="img-fluid" width="200px" id="logo" src="./img/logo_color_blanco_perla.png"
+                    alt="logo_color_blanco_perla">
+                <button class="navbar-toggler mt-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse mt-5 row justify-content-end" id="navbarSupportedContent">
+
+
+                    <div class="container">
+                        <div class="row justify-content-start justify-content-lg-end">
+                            <div class="col-12 col-lg-6">
+                                <div class="row mt-1 justify-content-start justify-content-lg-center">
+                                    <form class="d-flex col-12 col-lg-5" role="search">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1"><img width="30px" src="./img/lupa.png" alt="iconoLupa">
+                                                </span>
+                                            </div>
+                                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" maxlength="10">
+                                        </div>
+                                    </form>
+
+                                    <div class="dropdown col-sm-1 mt-3">
+                                        <a class="btn-close-white" href="#" role="button" id="dropdownMenuLink"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img width="25px" src="./img/perfil.png" alt="iconoPerfil">
+                                        </a>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li><a class="dropdown-item" href="./views/login.html">Iniciar Sesión</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="./views/register.html">Registrarse</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown col-sm-1 mt-3">
+                                        <a class="nav-link" href="./views/shoppingDetail.html"><img width="25px" src="
+                                                ./img/carrito.png" alt="iconoCarrito"></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <ul class="nav justify-content-center mt-3 p-3 ">
+            <li class="nav-item">
+                <a id="botones-nav" class="nav-link" aria-current="page" href="./index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+                <a id="botones-nav" class="nav-link" href="./views/contact.html">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+                <a id="botones-nav" class="nav-link " href="./views/about.html">NOSOTROS</a>
+            </li>
+        </ul>
+    </header>
+
+
+
+    <main>
+        <div id="carouselExampleAutoplaying" class="carousel slide mt-4" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./img/slider_pc_1.png" class="w-100 d-md-block d-none"
+                        alt="carrusel de promociones para pc">
+
+                    <img src="./img/slider_movil_1.png" class="d-block d-md-none w-100"
+                        alt="carrusel de promociones para movil">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/slider_pc_2.png" class="w-100 d-md-block d-none"
+                        alt="carrusel de promociones para pc">
+
+                    <img src="./img/slider_movil_2.png" class="d-block d-md-none w-100"
+                        alt="carrusel de promociones para movil">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/slider_pc_3.png" class="w-100 d-md-block d-none"
+                        alt="carrusel de promociones para pc">
+
+                    <img src="./img/slider_movil_3.png" class="d-block d-md-none w-100"
+                        alt="carrusel de promociones para movil">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/slider_pc_4.png" class="w-100 d-md-block d-none"
+                        alt="carrusel de promociones para pc">
+
+                    <img src="./img/slider_movil_4.png" class="d-block d-md-none w-100"
+                        alt="carrusel de promociones para movil">
+                </div>
+
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+    <!-- ACA COMIENZAN LAS CARDS DEL MAIN -->
+    <div class="container-fluid mt-4">
+        <span>
+            <h1>Encontra lo que tanto buscas</h1>
+        </span>
+        <hr>
+        <div class="row row-main">
+            <div class="col-lg-3 col-md-6 col-sm-6 ">
+                <div class="card card-main" style="width: 18rem; align-items: center;">
+                    <img src="./img/1.png" class="card-img-top" alt="trajes-hombre">
+                    <div class="card-body" id="cuerpo-card-principal">
+                        <h5 class="card-title">HOMBRES</h5>
+                    </div>
+                    <a id="link-seccion-principal" href="./views/error404.html" class="btn btn-primary mb-3">Ver
+                        mas</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card" style="width: 18rem; align-items: center;">
+                    <img src="./img/2.png" class="card-img-top" alt="vestidos-mujeres">
+                    <div class="card-body" id="cuerpo-card-principal">
+                        <h5 class="card-title">MUJERES</h5>
+                    </div>
+                    <a id="link-seccion-principal" href="./views/error404.html" class="btn btn-primary mb-3">Ver
+                        mas</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card" style="width: 18rem; align-items: center;">
+                    <img src="./img/3.png" class="card-img-top" alt="trajes-niños">
+                    <div class="card-body" id="cuerpo-card-principal">
+                        <h5 class="card-title">NIÑOS</h5>
+                    </div>
+                    <a id="link-seccion-principal" href="./views/error404.html" class="btn btn-primary mb-3">Ver
+                        mas</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card" style="width: 18rem; align-items: center;">
+                    <img src="./img/4.png" class="card-img-top" alt="vestidos-adolescentes">
+                    <div class="card-body" id="cuerpo-card-principal">
+                        <h5 class="card-title">ADOLESCENTES</h5>
+
+                    </div>
+                    <a id="link-seccion-principal" href="./views/error404.html" class="btn btn-primary mb-3">Ver
+                        mas</a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar bg-body-tertiary">
+            <form class="container-fluid justify-content-center form-segundo-nav ">
+                <a href="./views/error404.html" class="btn  me-2 mb-3 btn-segundo-nav" type="button"> Fiestas de
+                    XV</a>
+                <a class="btn  me-2 mb-3 btn-segundo-nav" href="./views/error404.html"
+                    type="button">Casamientos</a>
+                <a class="btn  mb-3 btn-segundo-nav" type="button" href="./views/error404.html">Egresados</a>
+            </form>
+        </nav>
+        <span> <h2>Todo al mejor precio</h2></span>
+        <hr>
+        <div class="row row-main">
+          
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/imagen_5.jpg" class="card-img-top" alt="traje-gris">
+                    <div class="card-body">
+                        <p class="card-text">Traje infantil Valencia</p>
+                        <a id="link-seccion-principal" href="./views/productDetail.html" class="btn btn-primary mb-3">Ver mas</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/imagen_6.jpg" class="card-img-top" alt="conjunto-colorArena">
+                    <div class="card-body">
+                        <p class="card-text">Conjunto Beb Nen Varon</p>
+                        <a id="link-seccion-principal" href="./views/productDetail.html" class="btn btn-primary mb-3">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/5.png" class="card-img-top" alt="traje-azul">
+                    <div class="card-body">
+                        <p class="card-text">Traje infantil Toscana</p>
+                        <a id="link-seccion-principal" href="./views/error404.html" class="btn btn-primary mb-3">Ver mas</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/imagen_13.jpg" class="card-img-top" alt="conjunto-negro">
+                    <div class="card-body">
+                        <p class="card-text">Conjunto Beb Nen Black</p>
+                        <a id="link-seccion-principal" href="./views/error404.html" class="btn btn-primary mb-3">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span><h2 class="mt-5">Diseños exclusivos y la mejor calidad</h2>
+            <hr></span>
+        <div class="row mt-5 row-main">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/9.png" class="card-img-top" alt="vestidoNegro-conLunares">
+                    <div class="card-body">
+                        <p class="card-text">Vestido Sabina</p>
+                        <a id="link-seccion-principal" href="./views/error404.html" class="btn btn-primary mb-3">Ver mas</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/8.png" class="card-img-top" alt="conjuntoFemenino-negro">
+                    <div class="card-body">
+                        <p class="card-text">Vestido champagne</p>
+                        <a id="link-seccion-principal" href="./views/error404.html" class="btn btn-primary mb-3">Ver mas</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/imagen_10.jpg" class="card-img-top" alt="vestido-rosaPastel">
+                    <div class="card-body">
+                        <p class="card-text">Vestido Jeli</p>
+                        <a id="link-seccion-principal" href="./views/error404.html" class="btn btn-primary mb-3">Ver mas</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/imagen_11.jpg" class="card-img-top" alt="vestido-dorado">
+                    <div class="card-body">
+                        <p class="card-text">Vestido Arani</p>
+                        <a id="link-seccion-principal" href="./views/error404.html" class="btn btn-primary mb-3">Ver mas</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span> <h2 class="mt-5">Increíbles trajes para hombres</h2>
+            <hr></span>
+        <div class="row mt-5 row-main">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/imagen_1.jpg" class="card-img-top" alt="traje-azulMarino">
+                    <div class="card-body">
+                        <p class="card-text">Traje azul marino Segovia</p>
+                        <a id="link-seccion-principal" href="./views/error404.html" class="btn btn-primary mb-3">Ver mas</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/6.png" class="card-img-top" alt="conjuntoCamisa-pantalón">
+                    <div class="card-body">
+                        <p class="card-text">Conjunto Ginebra</p>
+                        <a id="link-seccion-principal" href="./views/error404.html" class="btn btn-primary mb-3">Ver mas</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/imagen_9.jpg" class="card-img-top" alt="traje-marrón">
+                    <div class="card-body">
+                        <p class="card-text">Traje París</p>
+                        <a id="link-seccion-principal" href="./views/error404.html" class="btn btn-primary mb-3">Ver mas</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/7.png" class="card-img-top" alt="conjunto-azul">
+                    <div class="card-body">
+                        <p class="card-text">Conjunto Milan</p>
+                        <a id="link-seccion-principal" href="./views/error404.html" class="btn btn-primary mb-3">Ver mas</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACA TERMINAN LAS CARDS DEL MAIN -->
+    <footer class="mt-5 p-5 ">
+        <div class="container text-lg-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./img/logo_color_blanco_perla.png" class="img-thumbnail" alt="logo de Dress code">
+                </div>
+                <div class="col-md-4 mt-4">
+                    <p class="h5">Contacto</p>
+                    <ul class="list-unstyled">
+                        <li>
+                            Horarios de atención:
+                        </li>
+                        <li>
+                            Lun. a Sáb. 9 hs. a 13 hs | 17 hs a 21 hs
+                        </li>
+                        <li>
+                            Mail: dresscode@gmail.com
+                        </li>
+                        <li>
+                            Tel. 381-111222
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <p class="h5">Redes sociales</p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="bi bi-facebook"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-instagram"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-tiktok"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container" style="text-align: center;">
+            <div class="row">
+                <div div class="col">
+                    <p class="h5">Información</p>
+                    <ul class="list-unstyled">
+                        <li><a href="./views/error404.html" class="infoFooter">Preguntas frecuentes</a></li>
+                        <li>
+                            <a href="./views/error404.html" class="infoFooter">Medios de pago</a>
+                        </li>
+                        <li>
+                            <a href="./views/error404.html" class="infoFooter">Envíos a domicilio</a>
+                        </li>
+                        <li>
+                            <a href="./views/error404.html" class="infoFooter">Retiros en sucursal</a>
+                        </li>
+                        <li>
+                            <a href="./views/error404.html" class="infoFooter">Términos y condiciones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p> &copy; Dress code 2023 - Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <button class="buttonFixed rounded-circle"><i class="bi bi-whatsapp"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
