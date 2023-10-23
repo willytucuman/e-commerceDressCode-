@@ -19,7 +19,7 @@
 
 </head>
 
-<body style="background-color: white;">
+<body>
     <header>
         <nav class="navbar navbar-expand-lg">
             <div id="navPrincipal" class="container-fluid">
@@ -79,7 +79,7 @@
                                                 <div class="text-lg-start">
                                                     <h8>Ingresa desde:</h8>
                                                 </div>
-                                                <a href="../views/error404.html"><img src="../img/google-facebook.png"
+                                                <a href="./views/error404.html"><img src="../img/google-facebook.png"
                                                         alt="facebook-google"
                                                         style="width: 120px; height: 60px;"><br /></a>
                                                 <h7>¿Aún no tienes una cuenta en Dress code?</h7><br />
@@ -115,64 +115,177 @@
         </ul>
     </header>
 
-    <main class="main-contacto">
-        <h1>CONTACTO</h1>
-        <div class="container-fluid text-center ">
-            <div class="row row-contact">
-                <div class="card card-contact mt-3 ">
-                    <div class="card-body card-body-contact">
-                        <h5 class="card-title">INFO DE CONTACTO</h5>
-                        <p class="card-text">Horarios de atencion: <br>lunes a viernes: 09:00 hs a 13:00 hs y 17:00 hs a
-                            21:00 hs
-                            <br> sabados: 09:00 hs a 13:00 hs
-                        </p>
-                        <p class="card-link">Tel. 381-111222</p>
-                        <a id="link-gmail" href="../views/error404.html" class="card-link">dresscode@gmail.com</a>
+    <main class="contenedor-p-detail ">
+        <h1>Detalle del Producto</h1>
+        <div class="d-flex justify-content-center">
+            <div class="card mb-3" style="max-width: 850px">
+                <div class="row g-0">
+                    <div class="col-md-6">
+
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="3000">
+                                    <img src="../img/productDetail1.png" class="d-block w-100" alt="product_detail4">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="../img/productDetail2.png" class="d-block w-100" alt="product_detail5">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="../img/productDetail3.png" class="d-block w-100" alt="product_detail6">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
                     </div>
-                </div>
-            </div>
 
-            <div class="row row-form-mapa mt-5">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xl-6 ">
-                    <h2>Ubicanos</h2>
-                    <iframe class="mt-3 mb-3"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.102220506302!2d-65.20978209020383!3d-26.836700876595298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses!2sar!4v1696952581302!5m2!1ses!2sar"
-                        width="550" height="550" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
+                    <div class="col-md-6" id="card_body_productDetail">
+                        <div class="card-body ">
+                            <h5 class="card-title card-detail"><strong>Traje infantil Valencia</strong></h5>
+                            <hr>
+                            <p class="card-text text-start mt-4 card-detail"><strong>Precio Alquiler: $15.000</strong>
+                            </p>
+                            <p class="card-text text-start mt-4 text-success">Estado: Disponible</p>
+                            <p class="card-text text-start mt-4 card-detail ">En el alquiler del traje incluimos: </p>
+                            <ul>
+                                <li class="text-start mt-3 card-detail">
+                                    Chaleco gris perla
+                                </li>
+                                <li class="text-start mt-2 card-detail">
+                                    Pantalón liso gris perla
+                                </li>
+                                <li class="text-start mt-2 card-detail">
+                                    Con/Sin Moño gris plata
+                                </li>
+                                <li class="text-start mt-2 card-detail ">
+                                    Camisa Blanca seda
+                                </li>
+                                <li class="text-start mt-2 card-detail">
+                                    Arreglos
+                                </li>
+                                <li class="text-start mt-2 card-detail">
+                                    Portatrajes
+                                </li>
+                            </ul>
+                            <p class="card-text text-start"><small class="text-body-secondary">Categoría: Niños</small>
+                            </p>
 
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xl-6 ">
-                    <h2>Contáctanos</h2>
-                    <form class="formulario mt-3 ">
-                        <fieldset>
-                            <legend>Contactanos llenando todos los campos</legend>
-                            <div class="contenedor-campos">
-                                <div class="campo">
-                                    <label for="">Nombre</label>
-                                    <input class="input-text" type="text">
+                            <p class="card-text text-start mt-4 card-detail">Seleccione el talle: </p>
+
+                            <div class="row justify-content-between">
+                                <div class="col-sm-4 col-md-4 col-6">
+                                    <select class="form-select aria-label= select-talle" Default select example>
+                                        <option value="1">--</option>
+                                        <option value="2">S</option>
+                                        <option value="3">M</option>
+                                        <option value="4">L</option>
+                                        <option value="5">XL</option>
+                                        <option value="6">XXL</option>
+                                    </select>
                                 </div>
-                                <div class="campo">
-                                    <label for="">Correo</label>
-                                    <input class="input-text" type="email">
-                                </div>
-                                <div class="campo">
-                                    <label for="">Telefono</label>
-                                    <input class="input-text" type="tel">
-                                </div>
-                                <div class="campo">
-                                    <label for="">Consultas</label>
-                                    <input class="input-text consultas" type="text">
-                                </div>
+                                <button type="submit" class="btn text-center col-sm-7 col-12 me-sm-1 mt-2 mt-sm-0  "
+                                    id="btn-agregar-carrito">AGREGAR AL CARRITO</button>
                             </div>
-                            <div class="alinear-derecha flex "><input class="boton" type="submit" name=""
-                                    value="Enviar">
-                            </div>
-                        </fieldset>
-                    </form>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
+
+        <div class="container">
+            <h3 class="p-5 text-lg-center">Comentarios</h3>
+            <form>
+                <div class="form-group mt-3">
+                    <label for="comentario">
+                        <h5>Dejanos tu comentario:</h5>
+                    </label>
+                    <textarea class="form-control" id="comentario" rows="4" placeholder="Escribir aquí"></textarea>
+                    <p>*Para comentar primero debes iniciar sesión en tu cuenta</p>
+                </div>
+                <div class="d-flex flex-row-reverse bd-highlight">
+                    <button type="submit" class="btn btn-danger p-2 m-1">Cancelar</button>
+                    <button type="submit" class="btn btn-success p-2 m-1">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <br>
+        <br>
+        <div class="container d- centrar-card">
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+                <div class="row g-0 carta-comentario">
+                    <div class="col-md-3">
+                        <img src="../img/fotodeperfiles.png" class="rounded-circle imgComentarios" alt="photo">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h5 class="card-title">Chuchu Álvarez</h5>
+                            <p class="card-text">Para los 2 casamientos de mis hijos, uds siempre han sido la mejor
+                                eleccion.</p>
+                            <p class="card-text"><small class="text-muted">Hace 5 minutos</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d- centrar-card">
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+                <div class="row g-0 carta-comentario">
+                    <div class="col-md-3">
+                        <img src="../img/Perfil-de-usuarioDos.png" class="rounded-circle imgComentarios" alt="photo">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h5 class="card-title">Lolito Sosa</h5>
+                            <p class="card-text">Quiero agradecer el excelente servicio, me ayudaron en todo momento.
+                                Muchísimas gracias!!!
+                            </p>
+                            <p class="card-text"><small class="text-muted">Hace 20 minutos</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d- centrar-card">
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+                <div class="row g-0 carta-comentario">
+                    <div class="col-md-3">
+                        <img src="../img/Perfil-de-usuarioTres.png" class="rounded-circle imgComentarios" alt="photo">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h5 class="card-title">Sabina López</h5>
+                            <p class="card-text">La entrega fue más rápida de lo que me dijeron en un principio y sin
+                                problemas;
+                                la calidad del producto acorde a su precio. Muy bien confeccionado mi diseño.
+                            </p>
+                            <p class="card-text"><small class="text-muted">Hace 45 minutos</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 

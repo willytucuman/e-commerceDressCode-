@@ -1,4 +1,4 @@
-nav,footer{
+nav,footer, #btn-perfil,#card_body_productDetail{
     color: #8A6113;
     background-color: #f9f8f0;
     font-family: 'Raleway', sans-serif;
@@ -21,7 +21,7 @@ h1,h4,h2{
     color: rgb(194,151,71);
 }
 
-body{
+body,.card_body_productDetail{
     background-color:#ffffff ;
     font-family: 'Roboto', sans-serif;
 }
@@ -314,12 +314,69 @@ main{
 }
 
 /* ESTILOS PAGINAS REGISTRO */
-#crearCuenta {
+#crearCuenta,.btn-cupon{
     background-color: #0f3e8d;
     color: white;
 }
 
-#crearCuenta:hover{
+#crearCuenta,.btn-cupon:hover{
     background-color: #08266f;
 }
 /* TERMINA PAGINA REGISTRO */
+/*DETALLE DE CARRITO*/
+.boton-eliminar{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.boton-eliminar:hover{
+    color: brown;
+}
+.img-product{  
+height: 250px;
+width: 220px;
+}
+#nomb-product{
+    text-decoration: none;
+    color: black; 
+}
+#btn-alquilar{
+    color: #8A6113;
+    background-color: #ffffff;
+    border-color: #8A6113;
+}
+#btn-alquilar{
+    background-color: #f8f8f5;
+}
+#btn-volver, #btn-agregar-carrito{
+    color: black;
+    background-color: #c29747;
+    border-color: #8A6113;
+}
+#btn-volver:hover{
+    background-color: #ffffff;
+    color: #8A6113;
+
+}
+#btn-agregar-carrito:hover{
+    background-color: #ffffff;
+    color: #8A6113;
+}
+.card-product{
+    border-color: #8A6113;
+    background-color: #ffffff;
+    max-width: 800px;
+}
+.select-talle{
+    color:#c29747;
+    border-color: #8A6113;
+}
+.tamano-select{
+    width: 115px;
+}
+.input-cupon{
+    width: 125px;
+}
+
+/*TERMINA DETALLE DE CARRITO*/

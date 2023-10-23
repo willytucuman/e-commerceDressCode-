@@ -21,58 +21,75 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand m-lg-4" href="#"></a>
-      <div class="container-fluid">
-        <a href="../index.html">
-          <img class="img-fluid" width="200px" id="logo" src="../img/logo_color_blanco_perla.png"
-          alt="logo_color_blanco_perla">
-        </a>>
-        <button class="navbar-toggler mt-3" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
+      <div id="navPrincipal" class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <a href="../index.html" class="navbar-brand m-3"><img width="200px" src="../img/logo_color_blanco_perla.png"
+            alt="logo_color_blanco_perla"></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 
-        <div class="collapse navbar-collapse mt-5 row justify-content-end" id="navbarSupportedContent">
+          <form class="d-flex ms-auto me-3 mt-5" role="search">
+            <button class="border border-0 rounded">
+              <img width="30px" src="../img/lupa.png" alt="icono_lupa">
+            </button>
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" maxlength="15">
 
+            <button type="button" class="btn border-0" id="btn-perfil" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              <img width="30px" src="../img/perfil.png" alt="icono_perfil">
+            </button>
+            <a href="../views/shoppingDetail.html" class="btn-close-white p-1 me-5 ms-3">
+              <img width="30px" src="../img/carrito.png" alt="icono_carrito">
+            </a>
 
-          <div class="container">
-            <div class="row justify-content-start justify-content-lg-end">
-              <div class="col-12 col-lg-6">
-                <div class="row mt-1 justify-content-start justify-content-lg-center">
-                  <form class="d-flex col-12 col-lg-5" role="search">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1"><img width="30px" src="../img/lupa.png"
-                            alt="iconoLupa"></span>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesión</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group m-3">
+                        <label for="username"><i class="bi bi-person"></i> Usuario</label>
+                        <input type="text" class="form-control" id="username" placeholder="Ingrese su usuario"
+                          maxlength="40">
                       </div>
-                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"
-                        maxlength="10">
-                    </div>
-                  </form>
-
-                  <div class="dropdown col-sm-1 mt-3">
-                    <a class="btn-close-white" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      <img width="25px" src=" ../img/perfil.png" alt="iconoPerfil">
-                    </a>
-
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <li><a class="dropdown-item" href="../views/login.html">Iniciar Sesión</a></li>
-                      <li><a class="dropdown-item" href="../views/register.html">Registrarse</a></li>
-                    </ul>
+                      <div class="form-group m-3">
+                        <label for="password"><i class="bi bi-lock"></i> Contraseña</label>
+                        <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña"
+                          maxlength="10">
+                      </div>
+                      <div class="form-check mt-3">
+                        <input class="form-check-input" type="checkbox" id="exampleCheckbox">
+                        <label class="form-check-label" for="exampleCheckbox">
+                          Recordarme
+                        </label>
+                      </div>
+                      <div class="text-lg-center">
+                        <a href="../views/error404.html">¿Olvidaste tu contraseña?</a>
+                        <div class="text-lg-start">
+                          <h8>Ingresa desde:</h8>
+                        </div>
+                        <a href="../views/error404.html"><img src="../img/google-facebook.png" alt="facebook-google"
+                            style="width: 120px; height: 60px;"><br /></a>
+                        <h7>¿Aún no tienes una cuenta en Dress code?</h7><br />
+                        <a href="../views/register.html">Regístrate</a>
+                      </div>
+                    </form>
                   </div>
-
-                  <div class="dropdown col-sm-1 mt-3">
-                    <a class="nav-link" href="../views/shoppingDetail.html"><img width="25px"" src=" ../img/carrito.png"
-                        alt="iconoCarrito"></a>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
                   </div>
-
                 </div>
               </div>
             </div>
-
-          </div>
+          </form>
 
         </div>
       </div>
@@ -92,7 +109,6 @@
     </ul>
   </header>
 
-  <!-- Contenido principal comienza -->
   <main>
     <h2 class="text-center mt-5">Registrarse</h2>
 
@@ -150,10 +166,12 @@
 
     <div class="row justify-content-center mt-5 mb-5 container-fluid">
       <button type="submit" class="btn text-center col-md-2 col-5" id="crearCuenta">CREAR CUENTA</button>
-      <a href="" class="mt-4 text-center"> ¿Ya tienes cuenta? Inicia sesión</a>
+      <button type="button" class="btn mt-3 bg-white border-0 " id="btn-perfil" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        ¿Ya tienes cuenta? <u>Iniciar Sesión</u>
+      </button>
     </div>
   </main>
-  <!-- Contenido principal termina -->
 
   <footer class="mt-5 p-5">
     <div class="container" style="text-align: center;">
